@@ -1,3 +1,5 @@
+###Ana Cecilia Llarena
+###20210045
 """
 [Module] Tic-tac-toe bot utilities.
 """
@@ -71,6 +73,10 @@ def decide_move(board: list, player_id: str) -> list:
     enemigo = '0'
     if player_id == '0':
         enemigo == 'X'
+    ###La estrategia principal es siempre lograr comenzar en el medio.  
+    ### Si no lo logro, comienzo en la esquina superior izquierda.
+    ### Mi siguiente eestrategia es dedicarme a bloquear completamente al enemigo.
+    ###Si hay alguna oportunidad de formar la linea, colocar el simbolo que me corresponde alli.
 
     ###Siempre elegir la posicion de en medio
     if board [1][1] == "-":
